@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.alibaba.android.arouter.demo">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="false"
         android:icon="@drawable/ic_launcher"
         android:label="ARouter demo"
         android:theme="@style/Base.Theme.AppCompat">
-        <activity android:name=".SchemeFilterActivity">
+        <activity android:name=".SchemeFilterActivity"
+            android:exported="true">
 
             <!-- Scheme -->
             <intent-filter>
@@ -36,7 +36,8 @@
                     android:scheme="https"/>
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
